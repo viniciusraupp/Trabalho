@@ -19,7 +19,7 @@ public class PessoaJuridicaTest {
 	@Test
 	public void AdicionaPessoaJuridicatest() {
 		cliente1.setEndereco("Rua Cinco");
-		cliente1.adicionaTelefone(232545);
+		//cliente1.adicionaTelefone(232545);
 	}
 
 }

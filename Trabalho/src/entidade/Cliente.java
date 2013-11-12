@@ -35,7 +35,7 @@ public class Cliente {
 	}
 
 	public void adicionaTelefone(Telefone telefone) {
-		telefones.add(3435345,celular);
+		//telefones.add(3435345,celular);
 	}
 
 }
