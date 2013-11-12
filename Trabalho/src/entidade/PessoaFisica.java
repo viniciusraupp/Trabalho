@@ -2,13 +2,17 @@ package entidade;
 
 public class PessoaFisica extends Cliente {
 	
-	private int cpf;
+	private String cpf;
+	
+	public PessoaFisica(String nome) {
+		super(nome);
+	}
 
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 

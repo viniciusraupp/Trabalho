@@ -1,13 +1,19 @@
 package entidade;
 
 public class PessoaJuridica extends Cliente{
-	private int cnpj;
+	
+	private String cnpj;
+	
+	public PessoaJuridica(String nome) {
+		super(nome);
+		// TODO Auto-generated constructor stub
+	}
 
-	public int getCnpj() {
+	public String getCnpj() {
 		return cnpj;
 	}
 
-	public void setCnpj(int cnpj) {
+	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
 }

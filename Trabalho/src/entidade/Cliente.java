@@ -7,14 +7,15 @@ public class Cliente {
 
 	private String nome;
 	private String endereco;
-	private List<Telefone> telefone;
+	private List<Telefone> telefones = new ArrayList<Telefone>();
+
+	public Cliente(String nome) {
+		// super();
+		this.nome = nome;
+	}
 
 	public String getNome() {
 		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	public String getEndereco() {
@@ -26,11 +27,15 @@ public class Cliente {
 	}
 
 	public List<Telefone> getTelefone() {
-		return telefone;
+		return telefones;
 	}
 
 	public void setTelefone(List<Telefone> telefone) {
-		this.telefone = telefone;
+		this.telefones = telefone;
+	}
+
+	public void adicionaTelefone(Telefone telefone.) {
+		telefones.add(3435345,celular);
 	}
 
 }
