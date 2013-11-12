@@ -1,5 +1,7 @@
 package entidade;
-
+/*
+ *  Teste
+ */
 public class PessoaJuridica extends Cliente{
 	
 	private String cnpj;
