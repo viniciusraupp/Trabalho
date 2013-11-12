@@ -34,7 +34,7 @@ public class Cliente {
 		this.telefones = telefone;
 	}
 
-	public void adicionaTelefone(Telefone telefone.) {
+	public void adicionaTelefone(Telefone telefone) {
 		telefones.add(3435345,celular);
 	}
 
