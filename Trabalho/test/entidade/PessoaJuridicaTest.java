@@ -1,7 +1,9 @@
 package entidade;
 
 import static org.junit.Assert.*;
-
+/*
+* Testando o download.
+*/
 import org.junit.Before;
 import org.junit.Test;
 
