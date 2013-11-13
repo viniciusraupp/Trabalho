@@ -4,7 +4,7 @@ public class Impressora {
 	private String numserie;
 	private String marca;
 	private String modelo;
-	private int contadorPaginas;
+	private int contadorPaginas=0;
 	private Insumo toner;
 	private Insumo fusor;
 	
@@ -29,8 +29,12 @@ public class Impressora {
 	public int getContadorPaginas() {
 		return contadorPaginas;
 	}
-	public void setContadorPaginas(int contadorPaginas) {
+	/*public void setContadorPaginas(int contadorPaginas) {
 		this.contadorPaginas = contadorPaginas;
+	}*/
+	
+	public void adicionaInsumoNovo(Insumo insumo) {
+		
 	}
 	public Insumo getToner() {
 		return toner;
