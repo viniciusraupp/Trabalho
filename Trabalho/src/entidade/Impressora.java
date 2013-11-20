@@ -1,5 +1,8 @@
 package entidade;
-
+/**
+ * @author Andre
+ * @author Vinícius
+ */
 public class Impressora {
 	private String numserie;
 	private String marca;

@@ -1,5 +1,8 @@
 package entidade;
-
+/**
+ * @author Andre
+ * @author Vinícius
+ */
 public class Insumo {
 	private String tipo;
 	private int vidautil;

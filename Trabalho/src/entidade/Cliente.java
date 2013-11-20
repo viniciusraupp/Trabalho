@@ -1,5 +1,8 @@
 package entidade;
-
+/**
+ * @author Andre
+ * @author Vinícius
+ */
 import java.util.ArrayList;
 import java.util.List;
 
