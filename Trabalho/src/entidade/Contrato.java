@@ -11,6 +11,7 @@ public class Contrato {
 	private int validade;
 	private int valorcontrato;
 	
+	
 	public int getNumcontrato() {
 		return numcontrato;
 	}
