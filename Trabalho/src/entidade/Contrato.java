@@ -6,7 +6,7 @@ import java.util.List;
 public class Contrato {
 	private int numcontrato;
 	PessoaJuridica cliente;
-	ArrayList<Impressora> impressora;
+	ArrayList<Impressora> impressoras = new ArrayList<Impressora>();
 	private String datainicio;
 	private int validade;
 	private int valorcontrato;
@@ -23,12 +23,6 @@ public class Contrato {
 	}
 	public void setCliente(PessoaJuridica cliente) {
 		this.cliente = cliente;
-	}
-	public List<Impressora> getImpressora() {
-		return impressora;
-	}
-	public void setImpressora(ArrayList<Impressora> impressora) {
-		this.impressora = impressora;
 	}
 	public String getDatainicio() {
 		return datainicio;
