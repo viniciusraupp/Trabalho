@@ -1,5 +1,7 @@
 package entidade;
 /**
+ * Classe Impressora
+ * 
  * @author Andre
  * @author Vinícius
  */
@@ -10,6 +12,7 @@ public class Impressora {
 	private int contadorPaginas=0;
 	private Insumo toner;
 	private Insumo fusor;
+	private int vidaUtilImp;
 	
 	public String getNumserie() {
 		return numserie;
@@ -32,12 +35,8 @@ public class Impressora {
 	public int getContadorPaginas() {
 		return contadorPaginas;
 	}
-	/*public void setContadorPaginas(int contadorPaginas) {
+	public void setContadorPaginas(int contadorPaginas) {
 		this.contadorPaginas = contadorPaginas;
-	}*/
-	
-	public void adicionaInsumoNovo(Insumo insumo) {
-		
 	}
 	public Insumo getToner() {
 		return toner;
@@ -45,11 +44,21 @@ public class Impressora {
 	public void setToner(Insumo toner) {
 		this.toner = toner;
 	}
+	
 	public Insumo getFusor() {
 		return fusor;
 	}
 	public void setFusor(Insumo fusor) {
 		this.fusor = fusor;
+	}
+	public int getVidaUtilImp() {
+		return vidaUtilImp;
+	}
+	public void setVidaUtilImp(int vidaUtilImp) {
+		this.vidaUtilImp = vidaUtilImp;
+	}
+	public void adicionaInsumoNovo(Insumo insumo) {
+		
 	}
 	
 	
