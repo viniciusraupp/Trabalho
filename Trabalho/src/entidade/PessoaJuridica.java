@@ -1,6 +1,7 @@
 package entidade;
 /*
- *  Teste
+ *  Classe Pessoa Juridica
+ *  	herança da Classe Cliente
  */
 public class PessoaJuridica extends Cliente{
 	
@@ -8,7 +9,7 @@ public class PessoaJuridica extends Cliente{
 	
 	public PessoaJuridica(String nome) {
 		super(nome);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public String getCnpj() {
