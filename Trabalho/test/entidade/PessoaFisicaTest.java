@@ -1,6 +1,3 @@
-/**
- * 
- */
 package entidade;
 
 import static org.junit.Assert.*;
@@ -9,7 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * @author Andre e Vinícius
+ * Classe de teste Pessoa Fisica
+ * 
+ * @author Andre e Vinicius
  * 20/11/2013
  */
 public class PessoaFisicaTest {
