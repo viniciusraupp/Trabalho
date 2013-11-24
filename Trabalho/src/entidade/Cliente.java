@@ -1,5 +1,6 @@
 package entidade;
 /**
+ * Classe abstrata Cliente
  * @author Andre
  * @author Vinícius
  */
@@ -13,7 +14,6 @@ public class Cliente {
 	private List<Telefone> telefones = new ArrayList<Telefone>();
 
 	public Cliente(String nome) {
-		// super();
 		this.nome = nome;
 	}
 
