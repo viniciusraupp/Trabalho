@@ -1,11 +1,13 @@
 package entidade;
 /**
+ * Classe Insumo
+ * 
  * @author Andre
  * @author Vinícius
  */
 public class Insumo {
 	private String tipo;
-	private int vidautil;
+	private int vidautilIns;
 	
 	public String getTipo() {
 		return tipo;
@@ -13,12 +15,13 @@ public class Insumo {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public int getVidautil() {
-		return vidautil;
+	public int getVidautilIns() {
+		return vidautilIns;
 	}
-	public void setVidautil(int vidautil) {
-		this.vidautil = vidautil;
+	public void setVidautilIns(int vidautilIns) {
+		this.vidautilIns = vidautilIns;
 	}
+	
 	
 	
 }
