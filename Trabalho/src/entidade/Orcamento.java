@@ -11,7 +11,7 @@ import java.util.List;
  * @author Andre e Vinícius
  * 24/11/2013
  */
-public class Orcamento {
+public class Orcamento implements Negociavel{
 	private String numOrcamento;
 	private PessoaJuridica cliente;
 	private List<Impressora> impressoras;
@@ -54,6 +54,16 @@ public class Orcamento {
 	}
 	public void setFranquiaPaginasOrc(int franquiaPaginasOrc) {
 		this.franquiaPaginasOrc = franquiaPaginasOrc;
+	}
+	
+	@Override
+	public void adicionaCliente() {
+		
+	}
+
+	@Override
+	public void adicionaImpressora() {
+		
 	}
 	
 	
