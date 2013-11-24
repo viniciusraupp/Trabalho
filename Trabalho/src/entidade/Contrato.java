@@ -8,18 +8,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Contrato {
-	private int numcontrato;
+	private String numcontrato;
 	private PessoaJuridica cliente;
-	private ArrayList<Impressora> impressoras = new ArrayList<Impressora>();
+	private List<Impressora> impressoras = new ArrayList<Impressora>();
 	private String datainicio;
-	private int validade;
-	private int valorcontrato;
+	private String datafim;
+	private double valorcontrato;
+	private int franquiapaginas;
 	
 	
-	public int getNumcontrato() {
+	public String getNumcontrato() {
 		return numcontrato;
 	}
-	public void setNumcontrato(int numcontrato) {
+	public void setNumcontrato(String numcontrato) {
 		this.numcontrato = numcontrato;
 	}
 	
@@ -29,25 +30,38 @@ public class Contrato {
 	public void setCliente(PessoaJuridica cliente) {
 		this.cliente = cliente;
 	}
+	public List<Impressora> getImpressoras() {
+		return impressoras;
+	}
+	public void setImpressoras(List<Impressora> impressoras) {
+		this.impressoras = impressoras;
+	}
 	public String getDatainicio() {
 		return datainicio;
 	}
 	public void setDatainicio(String datainicio) {
 		this.datainicio = datainicio;
 	}
-	public int getValidade() {
-		return validade;
+	
+	public String getDatafim() {
+		return datafim;
 	}
-	public void setValidade(int validade) {
-		this.validade = validade;
+	public void setDatafim(String datafim) {
+		this.datafim = datafim;
 	}
-	public int getValorcontrato() {
+	public double getValorcontrato() {
 		return valorcontrato;
 	}
-	public void setValorcontrato(int valorcontrato) {
+	public void setValorcontrato(double valorcontrato) {
 		this.valorcontrato = valorcontrato;
 	}
 	
+	public int getFranquiapaginas() {
+		return franquiapaginas;
+	}
+	public void setFranquiapaginas(int franquiapaginas) {
+		this.franquiapaginas = franquiapaginas;
+	}
 	public void adicionaCliente(Cliente cliente){
 		
 	}
