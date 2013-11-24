@@ -1,6 +1,9 @@
 package entidade;
-/*
- * Teste 
+/**
+ * Classe Telefone
+ * 
+ * @author Andre e Vinícius
+ * 24/11/2013
  */
 
 public class Telefone {
