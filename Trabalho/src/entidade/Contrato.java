@@ -17,7 +17,15 @@ public class Contrato {
 	private String datafim;
 	private double valorcontrato;
 	private int franquiapaginas;
+	private static int numTotalContratos;
 	
+	private Contrato(){
+		Contrato.numTotalContratos=Contrato.numTotalContratos+1;
+	}
+	
+	public static int getTotalContratos(){
+		return numTotalContratos;
+	}
 	
 	public String getNumcontrato() {
 		return numcontrato;
