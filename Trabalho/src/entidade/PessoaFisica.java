@@ -8,15 +8,15 @@ package entidade;
 public class PessoaFisica extends Cliente {
 
 	private String cpf;
-
-	public boolean adicionaPessoaFisica(String nome, String cpf) {
-
+	
+	@Override
+	public boolean adicionaCliente(String nome, String cpf) {
 		if (nome.length() > 1 && cpf.length() == 11) {
 			super.nome = nome;
 			this.cpf = cpf;
 			return true;
 		}
-		return false;
+		return false;		
 	}
 
 	/**
@@ -33,5 +33,6 @@ public class PessoaFisica extends Cliente {
 		return (cpf.substring(0, 3) + "." + cpf.substring(3, 6) + "."
 				+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
 	}
+	
 
 }

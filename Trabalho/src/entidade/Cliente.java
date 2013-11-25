@@ -8,12 +8,18 @@ package entidade;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
+public abstract class Cliente {
 
 	protected String nome;
 	private String endereco;
 	private List<Telefone> telefones = new ArrayList<Telefone>();
 
+	/**
+	 * @param nome
+	 * @param cpf ou cnpj
+	 */
+	public abstract boolean adicionaCliente(String nome, String idCliente);
+	
 	public String getNome() {
 		return nome;
 	}
@@ -29,13 +35,4 @@ public class Cliente {
 	public List<Telefone> getTelefone() {
 		return telefones;
 	}
-
-	public void setTelefone(List<Telefone> telefone) {
-		this.telefones = telefone;
-	}
-
-	public void adicionaTelefone(Telefone telefone) {
-		// telefones.add(3435345,celular);
-	}
-
 }

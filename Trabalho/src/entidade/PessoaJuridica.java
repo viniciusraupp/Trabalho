@@ -8,14 +8,14 @@ public class PessoaJuridica extends Cliente {
 
 	private String cnpj;
 
-	public boolean adicionaPessoaJuridica(String nome, String cnpj) {
-
+	@Override
+	public boolean adicionaCliente(String nome, String cnpj) {
 		if (nome.length() > 1 && cnpj.length() == 14) {
 			super.nome = nome;
 			this.cnpj = cnpj;
 			return true;
 		}
-		return false;
+		return false;		
 	}
 
 	/**
