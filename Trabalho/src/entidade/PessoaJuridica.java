@@ -8,7 +8,7 @@ public class PessoaJuridica extends Cliente {
 
 	private String cnpj;
 
-	public boolean adicionaPF(String nome, String cnpj) {
+	public boolean adicionaPessoaJuridica(String nome, String cnpj) {
 
 		if (nome.length() > 1 && cnpj.length() == 14) {
 			super.nome = nome;
