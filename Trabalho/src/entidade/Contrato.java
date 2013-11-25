@@ -1,5 +1,7 @@
 package entidade;
 /**
+ * Classe Contrato
+ * 
  * @author Andre
  * @author Vinícius
  * ${tags}
