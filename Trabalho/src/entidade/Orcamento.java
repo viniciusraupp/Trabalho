@@ -34,9 +34,7 @@ public class Orcamento implements Negociavel{
 	public List<Impressora> getImpressoras() {
 		return impressoras;
 	}
-	public void setImpressoras(List<Impressora> impressoras) {
-		this.impressoras = impressoras;
-	}
+	
 	public String getDataValidadeOrc() {
 		return dataValidadeOrc;
 	}
@@ -57,13 +55,14 @@ public class Orcamento implements Negociavel{
 	}
 	
 	@Override
-	public void adicionaCliente() {
-		
+	public void adicionaCliente(String nome, String cnpj) {
+		PessoaJuridica cliente = new PessoaJuridica();
+		cliente.adicionaCliente(nome, cnpj);		
 	}
 
 	@Override
-	public void adicionaImpressora() {
-		
+	public void setImpressoras(List<Impressora> impressoras) {
+		this.impressoras = impressoras;
 	}
 	
 	
