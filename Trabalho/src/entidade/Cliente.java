@@ -16,10 +16,11 @@ public abstract class Cliente {
 
 	/**
 	 * @param nome
-	 * @param cpf ou cnpj
+	 * @param cpf
+	 *            ou cnpj
 	 */
 	public abstract boolean adicionaCliente(String nome, String idCliente);
-	
+
 	public String getNome() {
 		return nome;
 	}
