@@ -21,7 +21,7 @@ public class Contrato implements Negociavel {
 	private static int numTotalContratos;
 
 	/**
-	 * Método static
+	 * Método static 
 	 */
 	private Contrato() {
 		Contrato.numTotalContratos = Contrato.numTotalContratos + 1;
