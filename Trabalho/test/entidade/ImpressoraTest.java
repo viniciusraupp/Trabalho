@@ -15,9 +15,27 @@ public class ImpressoraTest {
 	}
 
 	@Test
+	public void vidaUtilTest() {
+		impressora1.vidaUtil(100000);
+		assertEquals("Valor iniciua da vita util da impressora é 100000", 100000, impressora1.getVidaUtil());
+
+	}
+
+	@Test
+	public void reduzVidaUtilTest() {
+		impressora1.vidaUtil(100000);
+		impressora1.reduzVidaUtil(25);
+		assertEquals("Valor atual da vita util da impressora é 100000-25", 99975, impressora1.getVidaUtil());
+		impressora1.reduzVidaUtil(75);
+		assertEquals("Valor atual da vita util da impressora é 99900", 99900, impressora1.getVidaUtil());
+
+	}
+
+	@Test
 	public void testGetNumserie() {
 		impressora1.setNumserie("F01XB");
-		assertEquals("Número de série deve ser F01XB", "F01XB", impressora1.getNumserie());
+		assertEquals("Número de série deve ser F01XB", "F01XB",
+				impressora1.getNumserie());
 	}
 
 	@Test
@@ -34,7 +52,8 @@ public class ImpressoraTest {
 
 	@Test
 	public void testGetContadorPaginas() {
-		assertEquals("Contador inicial deve ser zero", 0, impressora1.getContadorPaginas());
+		assertEquals("Contador inicial deve ser zero", 0,
+				impressora1.getContadorPaginas());
 	}
 
 }

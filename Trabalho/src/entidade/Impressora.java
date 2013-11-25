@@ -74,4 +74,9 @@ public class Impressora implements VidaUtil {
 
 	}
 
+	@Override
+	public int getVidaUtil() {
+		return vidaUtilImp;
+	}
+
 }

@@ -18,5 +18,7 @@ public interface VidaUtil {
 	 *            recebe quantas unidades será reduzida.
 	 */
 	public void reduzVidaUtil(int num);
+	
+	public int getVidaUtil();
 
 }
