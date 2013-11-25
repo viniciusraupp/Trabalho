@@ -1,4 +1,5 @@
 package entidade;
+
 /**
  * Classe abstrata Cliente
  * @author Andre
@@ -9,13 +10,9 @@ import java.util.List;
 
 public class Cliente {
 
-	private String nome;
+	protected String nome;
 	private String endereco;
 	private List<Telefone> telefones = new ArrayList<Telefone>();
-
-	public Cliente(String nome) {
-		this.nome = nome;
-	}
 
 	public String getNome() {
 		return nome;
@@ -38,7 +35,7 @@ public class Cliente {
 	}
 
 	public void adicionaTelefone(Telefone telefone) {
-		//telefones.add(3435345,celular);
+		// telefones.add(3435345,celular);
 	}
 
 }
