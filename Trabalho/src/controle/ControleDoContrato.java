@@ -9,11 +9,11 @@ public class ControleDoContrato {
 		return franquiaPaginas;
 	}
 
-	public void setFranquiaPaginas(int franquiaPaginas) {
+	public void setFranquiaPaginas(Integer franquiaPaginas) {
 		this.franquiaPaginas = franquiaPaginas;
 	}
 	
-	public void imprimir(Impressora impressora, int QtdPaginas){
+	public void imprimir(Impressora impressora, Integer QtdPaginas){
 		
 	}
 	
