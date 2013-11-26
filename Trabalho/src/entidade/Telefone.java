@@ -8,7 +8,7 @@ package entidade;
 
 public class Telefone {
 	
-	private int numero;
+	private Integer numero;
 	private String tipo;
 
 	public int getNumero() {
