@@ -24,12 +24,12 @@ public class Insumo implements VidaUtil {
 
 	
 	@Override
-	public void vidaUtil(int num) {
+	public void vidaUtil(Integer num) {
 		vidaUtilIns = num;
 
 	}
 	@Override
-	public void reduzVidaUtil(int num) {
+	public void reduzVidaUtil(Integer num) {
 		vidaUtilIns=vidaUtilIns-num;
 		
 	}

@@ -11,13 +11,13 @@ public interface VidaUtil {
 	 * @param num
 	 *            inicializa o contrador da vida útil.
 	 */
-	public void vidaUtil(int num);
+	public void vidaUtil(Integer num);
 
 	/**
 	 * @param num
 	 *            recebe quantas unidades será reduzida.
 	 */
-	public void reduzVidaUtil(int num);
+	public void reduzVidaUtil(Integer num);
 	
 	public int getVidaUtil();
 
