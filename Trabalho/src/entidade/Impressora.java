@@ -12,14 +12,14 @@ public class Impressora implements VidaUtil {
 	private String modelo;
 	private Integer contadorPaginas = 0;
 	private Insumo insumo;
-		private Integer vidaUtilImp;
-
-	public String getNumserie() {
-		return numserie;
-	}
+	private Integer vidaUtilImp;
 
 	public Impressora(String numserie) {
 		this.numserie = numserie;
+	}
+
+	public String getNumserie() {
+		return numserie;
 	}
 
 	public String getMarca() {
@@ -46,7 +46,7 @@ public class Impressora implements VidaUtil {
 		this.contadorPaginas = contadorPaginas;
 	}
 
-	public void adicionaInsumo(String tipo,Integer tempoVidaUtil){
+	public void adicionaInsumo(String tipo, Integer tempoVidaUtil) {
 		insumo = new Insumo();
 		insumo.setTipo(tipo);
 		insumo.vidaUtil(tempoVidaUtil);

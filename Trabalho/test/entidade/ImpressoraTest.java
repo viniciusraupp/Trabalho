@@ -11,7 +11,7 @@ public class ImpressoraTest {
 
 	@Before
 	public void setUp() throws Exception {
-		impressora1 = new Impressora();
+		impressora1 = new Impressora("F01XB");
 	}
 
 	@Test
@@ -29,13 +29,6 @@ public class ImpressoraTest {
 		impressora1.reduzVidaUtil(75);
 		assertEquals("Valor atual da vida util da impressora é 99900", 99900, impressora1.getVidaUtil());
 
-	}
-
-	@Test
-	public void testGetNumserie() {
-		impressora1.setNumserie("F01XB");
-		assertEquals("Número de série deve ser F01XB", "F01XB",
-				impressora1.getNumserie());
 	}
 
 	@Test

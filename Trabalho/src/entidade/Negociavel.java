@@ -1,7 +1,5 @@
 package entidade;
 
-import java.util.List;
-
 /**
  * Interface Negociavel
  * 
@@ -11,9 +9,6 @@ public interface Negociavel {
 
 	public void adicionaCliente(String nome, String cnpj);
 	public void adicionaImpressoras(String numSerie, String marca,String modelo);
-	public void setFranquiaPaginas(Integer franquiaPaginas);
-
-	//public void setImpressoras(List<Impressora> impressoras); Implementação futura.
-	
+	public void setFranquiaPaginas(Integer franquiaPaginas);	
 
 }

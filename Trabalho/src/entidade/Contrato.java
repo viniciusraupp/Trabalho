@@ -1,13 +1,5 @@
 package entidade;
 
-/**
- * Classe Contrato * 
- * @author Andre Vinicius
- * 
- */
-import java.util.ArrayList;
-import java.util.List;
-
 public class Contrato implements Negociavel {
 	private String numcontrato;
 	private PessoaJuridica cliente; // private List<Impressora> impressoras =
@@ -46,11 +38,6 @@ public class Contrato implements Negociavel {
 	public void setCliente(PessoaJuridica cliente) {
 		this.cliente = cliente;
 	}
-
-	/*
-	 * public List<Impressora> getImpressoras() { Implementação futura return
-	 * impressoras; }
-	 */
 
 	/**
 	 * @return the impressoras
@@ -110,10 +97,5 @@ public class Contrato implements Negociavel {
 		PessoaJuridica cliente = new PessoaJuridica();
 		cliente.adicionaCliente(nome, cnpj);
 	}
-
-	/*
-	 * @Override public void setImpressoras(List<Impressora> impressoras) {
-	 * Implementação futura. this.impressoras = impressoras; }
-	 */
 
 }
