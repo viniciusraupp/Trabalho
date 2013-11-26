@@ -8,7 +8,7 @@ package entidade;
  */
 public class Insumo implements VidaUtil {
 	private String tipo;
-	private int vidaUtilIns;
+	private Integer vidaUtilIns;
 
 	public String getTipo() {
 		return tipo;
