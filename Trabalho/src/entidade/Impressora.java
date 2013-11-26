@@ -10,10 +10,10 @@ public class Impressora implements VidaUtil {
 	private String numserie;
 	private String marca;
 	private String modelo;
-	private int contadorPaginas = 0;
+	private Integer contadorPaginas = 0;
 	private Insumo toner;
 	private Insumo fusor;
-	private int vidaUtilImp;
+	private Integer vidaUtilImp;
 
 	public String getNumserie() {
 		return numserie;
