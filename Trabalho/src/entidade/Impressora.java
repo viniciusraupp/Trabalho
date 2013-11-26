@@ -43,7 +43,7 @@ public class Impressora implements VidaUtil {
 		return contadorPaginas;
 	}
 
-	public void setContadorPaginas(int contadorPaginas) {
+	public void setContadorPaginas(Integer contadorPaginas) {
 		this.contadorPaginas = contadorPaginas;
 	}
 
@@ -64,12 +64,12 @@ public class Impressora implements VidaUtil {
 	}
 
 	@Override
-	public void vidaUtil(int num) {
+	public void vidaUtil(Integer num) {
 		vidaUtilImp = num;
 	}
 
 	@Override
-	public void reduzVidaUtil(int num) {
+	public void reduzVidaUtil(Integer num) {
 		vidaUtilImp = vidaUtilImp - num;
 
 	}
