@@ -27,7 +27,7 @@ public class Contrato implements Negociavel {
 		Contrato.numTotalContratos = Contrato.numTotalContratos + 1;
 	}
 
-	public static int getTotalContratos() {
+	public static Integer getTotalContratos() {
 		return numTotalContratos;
 	}
 
@@ -71,7 +71,7 @@ public class Contrato implements Negociavel {
 		return valorcontrato;
 	}
 
-	public void setValorcontrato(double valorcontrato) {
+	public void setValorcontrato(Double valorcontrato) {
 		this.valorcontrato = valorcontrato;
 	}
 
@@ -79,7 +79,7 @@ public class Contrato implements Negociavel {
 		return franquiapaginas;
 	}
 
-	public void setFranquiapaginas(int franquiapaginas) {
+	public void setFranquiapaginas(Integer franquiapaginas) {
 		this.franquiapaginas = franquiapaginas;
 	}
 
