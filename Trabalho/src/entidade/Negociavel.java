@@ -10,7 +10,10 @@ import java.util.List;
 public interface Negociavel {
 
 	public void adicionaCliente(String nome, String cnpj);
+	public void adicionaImpressoras(String numSerie, String marca,String modelo);
+	public void setFranquiaPaginas(Integer franquiaPaginas);
 
-	public void setImpressoras(List<Impressora> impressoras);
+	//public void setImpressoras(List<Impressora> impressoras); Implementação futura.
+	
 
 }

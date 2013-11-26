@@ -1,29 +1,29 @@
 package entidade;
 
 /**
- * Classe Contrato
+ * Classe Contrato * 
+ * @author Andre Vinicius
  * 
- * @author Andre
- * @author Vinícius
- * ${tags}
  */
 import java.util.ArrayList;
 import java.util.List;
 
 public class Contrato implements Negociavel {
 	private String numcontrato;
-	private PessoaJuridica cliente;
-	private List<Impressora> impressoras = new ArrayList<Impressora>();
+	private PessoaJuridica cliente; // private List<Impressora> impressoras =
+									// new ArrayList<Impressora>();
+	// Implementação futura.
+	private Impressora impressoras; // Retirar quando a implementação de
+									// Collections funcionar.
 	private String datainicio;
 	private String datafim;
 	private Double valorcontrato;
 	private Integer franquiapaginas;
-	private static Integer numTotalContratos;
+	private static Integer numTotalContratos; // Atributo static
 
-	/**
-	 * Método static 
-	 */
-	private Contrato() {
+	public Contrato(String numcontrato) {
+		this.numcontrato = numcontrato;
+		// Método static
 		Contrato.numTotalContratos = Contrato.numTotalContratos + 1;
 	}
 
@@ -47,8 +47,29 @@ public class Contrato implements Negociavel {
 		this.cliente = cliente;
 	}
 
-	public List<Impressora> getImpressoras() {
+	/*
+	 * public List<Impressora> getImpressoras() { Implementação futura return
+	 * impressoras; }
+	 */
+
+	/**
+	 * @return the impressoras
+	 */
+	public Impressora getImpressoras() {
 		return impressoras;
+	}
+
+	/**
+	 * @param impressoras
+	 *            the impressoras to set
+	 */
+	@Override
+	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
+		impressoras = new Impressora(numSerie);
+		impressoras.setMarca(marca);
+		impressoras.setModelo(modelo);
+		// impressoras.adicionaInsumo(tipo, tempoVidaUtil);
+
 	}
 
 	public String getDatainicio() {
@@ -75,11 +96,12 @@ public class Contrato implements Negociavel {
 		this.valorcontrato = valorcontrato;
 	}
 
-	public int getFranquiapaginas() {
+	public int getFranquiaPaginas() {
 		return franquiapaginas;
 	}
 
-	public void setFranquiapaginas(Integer franquiapaginas) {
+	@Override
+	public void setFranquiaPaginas(Integer franquiapaginas) {
 		this.franquiapaginas = franquiapaginas;
 	}
 
@@ -89,9 +111,9 @@ public class Contrato implements Negociavel {
 		cliente.adicionaCliente(nome, cnpj);
 	}
 
-	@Override
-	public void setImpressoras(List<Impressora> impressoras) {
-		this.impressoras = impressoras;
-	}
+	/*
+	 * @Override public void setImpressoras(List<Impressora> impressoras) {
+	 * Implementação futura. this.impressoras = impressoras; }
+	 */
 
 }

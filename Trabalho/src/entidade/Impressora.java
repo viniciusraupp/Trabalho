@@ -11,15 +11,14 @@ public class Impressora implements VidaUtil {
 	private String marca;
 	private String modelo;
 	private Integer contadorPaginas = 0;
-	private Insumo toner;
-	private Insumo fusor;
-	private Integer vidaUtilImp;
+	private Insumo insumo;
+		private Integer vidaUtilImp;
 
 	public String getNumserie() {
 		return numserie;
 	}
 
-	public void setNumserie(String numserie) {
+	public Impressora(String numserie) {
 		this.numserie = numserie;
 	}
 
@@ -47,27 +46,23 @@ public class Impressora implements VidaUtil {
 		this.contadorPaginas = contadorPaginas;
 	}
 
-	public Insumo getToner() {
-		return toner;
+	public void adicionaInsumo(String tipo,Integer tempoVidaUtil){
+		insumo = new Insumo();
+		insumo.setTipo(tipo);
+		insumo.vidaUtil(tempoVidaUtil);
 	}
 
-	public void setToner(Insumo toner) {
-		this.toner = toner;
-	}
-
-	public Insumo getFusor() {
-		return fusor;
-	}
-
-	public void setFusor(Insumo fusor) {
-		this.fusor = fusor;
-	}
-
+	/*
+	 * Vida util da impressora.
+	 */
 	@Override
 	public void vidaUtil(Integer num) {
 		vidaUtilImp = num;
 	}
 
+	/*
+	 * Redução da Vida util da impressora.
+	 */
 	@Override
 	public void reduzVidaUtil(Integer num) {
 		vidaUtilImp = vidaUtilImp - num;
