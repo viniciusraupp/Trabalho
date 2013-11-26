@@ -16,9 +16,9 @@ public class Contrato implements Negociavel {
 	private List<Impressora> impressoras = new ArrayList<Impressora>();
 	private String datainicio;
 	private String datafim;
-	private double valorcontrato;
-	private int franquiapaginas;
-	private static int numTotalContratos;
+	private Double valorcontrato;
+	private Integer franquiapaginas;
+	private static Integer numTotalContratos;
 
 	/**
 	 * Método static 
