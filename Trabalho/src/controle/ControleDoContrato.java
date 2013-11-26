@@ -3,7 +3,7 @@ package controle;
 import entidade.Impressora;
 
 public class ControleDoContrato {
-	private int franquiaPaginas;
+	private Integer franquiaPaginas;
 
 	public int getFranquiaPaginas() {
 		return franquiaPaginas;
