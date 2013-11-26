@@ -16,8 +16,8 @@ public class Orcamento implements Negociavel{
 	private PessoaJuridica cliente;
 	private List<Impressora> impressoras;
 	private String dataValidadeOrc;
-	private double valorOrc;
-	private int franquiaPaginasOrc;
+	private Double valorOrc;
+	private Integer franquiaPaginasOrc;
 	
 	public String getNumOrcamento() {
 		return numOrcamento;
