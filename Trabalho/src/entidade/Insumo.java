@@ -35,7 +35,6 @@ public class Insumo implements VidaUtil {
 	}
 	@Override
 	public int getVidaUtil() {
-		// TODO Auto-generated method stub
 		return vidaUtilIns;
 	}
 
