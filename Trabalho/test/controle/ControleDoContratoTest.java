@@ -23,6 +23,7 @@ public class ControleDoContratoTest {
 
 	
 	ControleDoContrato contrato;
+	//Contrato contrato1;
 		
 	@Before
 	public void setUp() throws Exception {
@@ -31,10 +32,8 @@ public class ControleDoContratoTest {
 				
 	}
 
-	/**
-	 * Teste Adiciona Contrato
-	 */
-	@Test
+	// Teste Adiciona Contrato
+		@Test
 	public void testAdicionaContrato() {
 		contrato.adicionaContrato("0001", "ABC", "00023512000135", "0123ABC", "LIVRE", "LI02");
 		
@@ -42,42 +41,42 @@ public class ControleDoContratoTest {
 		//assertEquals("Numero do cOntrato deve ser 0001", 0, contrato.equals(contrato));
 	}
 	
-	/**
-	 * Test franquia de páginas
-	 */
+	// Teste Inclui Impressora
+	@Test
+	public void testIncluiImpressora() {
+		contrato.incluiImpressora("987654", "HP", "L09H");
+		//contrato1=new Contrato();
+		assertEquals("Numero do impressoras deve ser 1", 1, contrato.getNumTotalImpressoras();
+		//assertEquals("Numero do cOntrato deve ser 0001", 0, contrato.equals(contrato));
+	}
+	
+	//Teste franquia de páginas
+	
 	/*@Test
 	public void testGetFranquiaPaginas() {
 		contrato.setFranquiaPaginas(1000);
 		assertEquals("Franquia de páginas deve ser 1000", 1000, contrato.getFranquiaPaginas());
 	}*/
 
-	/**
-	 * Test method for {@link controle.ControleDoContrato#setFranquiaPaginas(int)}.
-	 */
+	// Teste
 	@Test
 	public void testSetFranquiaPaginas() {
 		fail("Not yet implemented");
 	}
 
-	/**
-	 * Test method for {@link controle.ControleDoContrato#imprimir(entidade.Impressora, int)}.
-	 */
+	// Teste
 	@Test
 	public void testImprimir() {
 		fail("Not yet implemented");
 	}
 
-	/**
-	 * Test method for {@link controle.ControleDoContrato#trocarToner(entidade.Impressora)}.
-	 */
+	// Teste
 	@Test
 	public void testTrocarToner() {
 		fail("Not yet implemented");
 	}
 
-	/**
-	 * Test method for {@link controle.ControleDoContrato#trocarFusor(entidade.Impressora)}.
-	 */
+	// Teste
 	@Test
 	public void testTrocarFusor() {
 		fail("Not yet implemented");
