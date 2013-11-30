@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Classe Orcamento
  * 
- * @author Andre e Vinícius 24/11/2013
+ * @author Andre e Vinï¿½cius 24/11/2013
  */
 public class Orcamento implements Negociavel {
 	private String numOrcamento;
@@ -71,6 +71,9 @@ public class Orcamento implements Negociavel {
 
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
+		impressoras = new Impressora(numSerie);
+                impressoras.setMarca(marca);
+                impressoras.setModelo(modelo);
 
 	}
 
