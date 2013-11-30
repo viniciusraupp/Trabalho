@@ -12,7 +12,7 @@ public class Contrato implements Negociavel {
 	private Double valorcontrato;
 	private Integer franquiapaginas;
 	private static Integer numTotalContratos; // Atributo static OBS: como cada contrato é um objeto, acho que não podemos conta-los
-	private static Integer numTotalImpressoras;//talvez esse seja possivel ,pois cada contrato tem N impressoras
+	private Integer numTotalImpressoras;//talvez esse seja possivel ,pois cada contrato tem N impressoras
 
 	public Contrato(String numcontrato) {
 		this.numcontrato = numcontrato;
@@ -56,6 +56,7 @@ public class Contrato implements Negociavel {
 		impressoras = new Impressora(numSerie);
 		impressoras.setMarca(marca);
 		impressoras.setModelo(modelo);
+		this.numTotalImpressoras = this.numTotalImpressoras + 1;
 		// impressoras.adicionaInsumo(tipo, tempoVidaUtil);
 
 	}
@@ -97,6 +98,20 @@ public class Contrato implements Negociavel {
 	public void adicionaCliente(String nome, String cnpj) {
 		PessoaJuridica cliente = new PessoaJuridica();
 		cliente.adicionaCliente(nome, cnpj);
+	}
+
+	/**
+	 * @return the numTotalImpressoras
+	 */
+	public Integer getNumTotalImpressoras() {
+		return numTotalImpressoras;
+	}
+
+	/**
+	 * @param numTotalImpressoras the numTotalImpressoras to set
+	 */
+	public void setNumTotalImpressoras(Integer numTotalImpressoras) {
+		Contrato.numTotalImpressoras = numTotalImpressoras;
 	}
 
 }
