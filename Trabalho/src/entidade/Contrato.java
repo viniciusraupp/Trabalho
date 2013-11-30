@@ -11,7 +11,8 @@ public class Contrato implements Negociavel {
 	private String datafim;
 	private Double valorcontrato;
 	private Integer franquiapaginas;
-	private static Integer numTotalContratos; // Atributo static
+	private static Integer numTotalContratos; // Atributo static OBS: como cada contrato é um objeto, acho que não podemos conta-los
+	private static Integer numTotalImpressoras;//talvez esse seja possivel ,pois cada contrato tem N impressoras
 
 	public Contrato(String numcontrato) {
 		this.numcontrato = numcontrato;
