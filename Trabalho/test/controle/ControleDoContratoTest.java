@@ -23,13 +23,11 @@ public class ControleDoContratoTest {
 
 	
 	private ControleDoContrato contrato;
-	//Contrato contrato1;
 		
 	@Before
 	public void setUp() throws Exception {
 		
 		contrato = new ControleDoContrato();
-				
 	}
 
 	// Teste Adiciona Contrato
@@ -37,8 +35,8 @@ public class ControleDoContratoTest {
 	public void testAdicionaContrato() {
 		contrato.adicionaContrato("0001", "ABC", "00023512000135", "0123ABC", "LIVRE", "LI02");
 		
-		//assertEquals("Numero do cOntrato deve ser 0001", "0001", contrato.adicionaContrato("0001", "ABC", "00023512000135", "0123ABC", "LIVRE", "LI02");
-		//assertEquals("Numero do cOntrato deve ser 0001", 0, contrato.equals(contrato));
+		//assertEquals("Numero do contrato deve ser 0001", "0001", contrato.adicionaContrato("0001", "ABC", "00023512000135", "0123ABC", "LIVRE", "LI02");
+		//assertEquals("Numero do contrato deve ser 0001", 0, contrato.equals(contrato));
 	}
 	
 	// Teste Inclui Impressora
@@ -50,7 +48,7 @@ public class ControleDoContratoTest {
 		//assertEquals("Numero do cOntrato deve ser 0001", 0, contrato.equals(contrato));
 	}
 	
-	//Teste franquia de p�ginas
+	//Teste franquia de paginas
 	
 	/*@Test
 	public void testGetFranquiaPaginas() {
