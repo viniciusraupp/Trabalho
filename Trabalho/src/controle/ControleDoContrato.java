@@ -17,4 +17,10 @@ public class ControleDoContrato {
 	public void setFranquiaPaginas(Integer franquiaPaginas) {
 		contrato.setFranquiaPaginas(franquiaPaginas);
 	}
+	
+	public void incluiImpressora(String numSerie, String marca, String modelo){
+		contrato.adicionaImpressoras(numSerie, marca, modelo);
+		
+	}
+
 }
