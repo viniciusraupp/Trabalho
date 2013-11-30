@@ -40,17 +40,10 @@ public class Contrato implements Negociavel {
 		this.cliente = cliente;
 	}
 
-	/**
-	 * @return the impressoras
-	 */
 	public Impressora getImpressoras() {
 		return impressoras;
 	}
 
-	/**
-	 * @param impressoras
-	 *            the impressoras to set
-	 */
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
 		impressoras = new Impressora(numSerie);
@@ -58,7 +51,6 @@ public class Contrato implements Negociavel {
 		impressoras.setModelo(modelo);
 		this.numTotalImpressoras = this.numTotalImpressoras + 1;
 		// impressoras.adicionaInsumo(tipo, tempoVidaUtil);
-
 	}
 
 	public String getDatainicio() {
@@ -100,16 +92,10 @@ public class Contrato implements Negociavel {
 		cliente.adicionaCliente(nome, cnpj);
 	}
 
-	/**
-	 * @return the numTotalImpressoras
-	 */
 	public Integer getNumTotalImpressoras() {
 		return numTotalImpressoras;
 	}
 
-	/**
-	 * @param numTotalImpressoras the numTotalImpressoras to set
-	 */
 	public void setNumTotalImpressoras(Integer numTotalImpressoras) {
 		Contrato.numTotalImpressoras = numTotalImpressoras;
 	}
