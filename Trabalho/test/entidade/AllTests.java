@@ -1,6 +1,3 @@
-/**
- * 
- */
 package entidade;
 
 import org.junit.runner.RunWith;

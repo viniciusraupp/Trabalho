@@ -7,16 +7,10 @@ package entidade;
  */
 public interface VidaUtil {
 
-	/**
-	 * @param num
-	 *            inicializa o contrador da vida útil.
-	 */
+	// @param num inicializa o contador da vida útil.
 	public void vidaUtil(Integer num);
 
-	/**
-	 * @param num
-	 *            recebe quantas unidades será reduzida.
-	 */
+	// @param num recebe quantas unidades será reduzida.
 	public void reduzVidaUtil(Integer num);
 	
 	public int getVidaUtil();

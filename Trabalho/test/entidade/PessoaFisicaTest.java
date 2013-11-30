@@ -42,7 +42,6 @@ public class PessoaFisicaTest {
 		cliente1.adicionaCliente("Fulano", "12345678901");
 		assertEquals("cpf correto", "12345678901", cliente1.getCPF());
 		assertNotEquals("cpf correto", "45545678901", cliente1.getCPF());
-
 	}
 
 	@Test
@@ -52,7 +51,6 @@ public class PessoaFisicaTest {
 				cliente1.getCPFFormatado());
 		assertNotEquals("cpf correto", "023.456.789-01",
 				cliente1.getCPFFormatado());
-
 	}
 
 }

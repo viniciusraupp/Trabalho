@@ -1,6 +1,3 @@
-/**
- * 
- */
 package controle;
 
 import org.junit.runner.RunWith;

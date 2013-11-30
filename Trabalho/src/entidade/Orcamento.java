@@ -71,7 +71,6 @@ public class Orcamento implements Negociavel {
 
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
-		// TODO Auto-generated method stub
 
 	}
 

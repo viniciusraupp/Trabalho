@@ -14,9 +14,6 @@ import org.junit.Test;
  */
 public class ControleDeImpressaoTest {
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@Before
 	public void setUp() throws Exception {
 	}

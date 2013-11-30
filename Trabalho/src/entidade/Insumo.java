@@ -21,7 +21,6 @@ public class Insumo implements VidaUtil {
 	public int getVidaUtilIns() {
 		return vidaUtilIns;
 	}
-
 	
 	@Override
 	public void vidaUtil(Integer num) {

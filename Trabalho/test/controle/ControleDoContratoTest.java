@@ -1,6 +1,3 @@
-/**
- * 
- */
 package controle;
 
 import static org.junit.Assert.*;
@@ -17,10 +14,8 @@ import entidade.Contrato;
  * @author Vinicius
  *
  * 26/11/2013
- *
  */
 public class ControleDoContratoTest {
-
 	
 	private ControleDoContrato contrato;
 		

@@ -11,7 +11,6 @@ public class ControleDoContrato {
 		contrato = new Contrato(numContrato);
 		contrato.adicionaCliente(nome, cnpj);
 		contrato.adicionaImpressoras(numSerie, marca, modelo);
-
 	}
 
 	public void setFranquiaPaginas(Integer franquiaPaginas) {

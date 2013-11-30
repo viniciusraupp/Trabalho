@@ -1,12 +1,14 @@
 package entidade;
 
-/**
- * Classe de teste Pessoa juridica
- * 
- */
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
+/**
+ * Classe de teste Pessoa Juridica
+ * @author Andre e Vinicius
+ * 30/11/2013
+ */
 
 public class PessoaJuridicaTest {
 

@@ -52,21 +52,16 @@ public class Impressora implements VidaUtil {
 		insumo.vidaUtil(tempoVidaUtil);
 	}
 
-	/*
-	 * Vida util da impressora.
-	 */
+	// Vida util da impressora.
 	@Override
 	public void vidaUtil(Integer num) {
 		vidaUtilImp = num;
 	}
 
-	/*
-	 * Redução da Vida util da impressora.
-	 */
+	// Redução da Vida util da impressora.
 	@Override
 	public void reduzVidaUtil(Integer num) {
 		vidaUtilImp = vidaUtilImp - num;
-
 	}
 
 	@Override
