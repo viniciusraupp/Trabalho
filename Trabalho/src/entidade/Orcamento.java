@@ -13,10 +13,10 @@ import java.util.List;
 public class Orcamento implements Negociavel {
 	private String numOrcamento;
 	private PessoaJuridica cliente;
-	private List<Impressora> impressoras;
+	private Impressora impressoras;
 	private String dataValidadeOrc;
 	private Double valorOrc;
-	private Integer franquiaPaginasOrc;
+	private Double franquiaPaginasOrc;
 
 	public String getNumOrcamento() {
 		return numOrcamento;
@@ -32,10 +32,6 @@ public class Orcamento implements Negociavel {
 
 	public void setCliente(PessoaJuridica cliente) {
 		this.cliente = cliente;
-	}
-
-	public List<Impressora> getImpressoras() {
-		return impressoras;
 	}
 
 	public String getDataValidadeOrc() {
@@ -54,12 +50,12 @@ public class Orcamento implements Negociavel {
 		this.valorOrc = valorOrc;
 	}
 
-	public int getFranquiaPaginasOrc() {
+	public Double getFranquiaPaginasOrc() {
 		return franquiaPaginasOrc;
 	}
 
 	@Override
-	public void setFranquiaPaginas(Integer franquiaPaginasOrc) {
+	public void setFranquiaPaginas(Double franquiaPaginasOrc) {
 		this.franquiaPaginasOrc = franquiaPaginasOrc;
 	}
 
@@ -71,10 +67,15 @@ public class Orcamento implements Negociavel {
 
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
-		impressoras = new Impressora(numSerie);
-                impressoras.setMarca(marca);
-                impressoras.setModelo(modelo);
-
+		if (numOrcamento.length() > 0 && numOrcamento.length() <= 10) {
+			impressoras = new Impressora(numSerie);
+		}
+		if (numOrcamento.length() > 0 && numOrcamento.length() <= 8) {
+			impressoras.setMarca(marca);
+		}
+		if (numOrcamento.length() > 0 && numOrcamento.length() <= 10) {
+			impressoras.setModelo(modelo);
+		}
 	}
 
 }

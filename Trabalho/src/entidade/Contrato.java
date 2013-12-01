@@ -1,35 +1,29 @@
 package entidade;
 
+import javax.xml.crypto.Data;
+
 public class Contrato implements Negociavel {
-	private String numcontrato;
-	private PessoaJuridica cliente; // private List<Impressora> impressoras =
-									// new ArrayList<Impressora>();
-	// Implementação futura.
-	private Impressora impressoras; // Retirar quando a implementação de
-									// Collections funcionar.
-	private String datainicio;
-	private String datafim;
-	private Double valorcontrato;
-	private Integer franquiapaginas;
-	private static Integer numTotalContratos; // Atributo static OBS: como cada contrato é um objeto, acho que não podemos conta-los
-	private Integer numTotalImpressoras;//talvez esse seja possivel ,pois cada contrato tem N impressoras
+	private String numContrato;
+	private PessoaJuridica cliente;
+	private Impressora impressoras;
+	private Data dataInicio;
+	private Data dataFim;
+	private Double valorContrato;
+	private Double franquiaPaginas;
 
 	public Contrato(String numcontrato) {
-		this.numcontrato = numcontrato;
-		// Método static
-		Contrato.numTotalContratos = Contrato.numTotalContratos + 1;
-	}
+		if (numcontrato.length() > 0 && numcontrato.length() <= 10) {
+			this.numContrato = numcontrato;
+		}
 
-	public static Integer getTotalContratos() {
-		return numTotalContratos;
 	}
 
 	public String getNumcontrato() {
-		return numcontrato;
+		return numContrato;
 	}
 
 	public void setNumcontrato(String numcontrato) {
-		this.numcontrato = numcontrato;
+		this.numContrato = numcontrato;
 	}
 
 	public PessoaJuridica getCliente() {
@@ -46,44 +40,50 @@ public class Contrato implements Negociavel {
 
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
-		impressoras = new Impressora(numSerie);
-		impressoras.setMarca(marca);
-		impressoras.setModelo(modelo);
-		this.numTotalImpressoras = this.numTotalImpressoras + 1;
-		// impressoras.adicionaInsumo(tipo, tempoVidaUtil);
+		if (numContrato.length() > 0 && numContrato.length() <= 10) {
+			impressoras = new Impressora(numSerie);
+		}
+		if (numContrato.length() > 0 && numContrato.length() <= 8) {
+			impressoras.setMarca(marca);
+		}
+		if (numContrato.length() > 0 && numContrato.length() <= 10) {
+			impressoras.setModelo(modelo);
+		}
 	}
 
-	public String getDatainicio() {
-		return datainicio;
+	public Data getDatainicio() {
+		return dataInicio;
 	}
 
-	public void setDatainicio(String datainicio) {
-		this.datainicio = datainicio;
+	public void setDatainicio(Data datainicio) {
+		this.dataInicio = datainicio;
 	}
 
-	public String getDatafim() {
-		return datafim;
+	public Data getDatafim() {
+		return dataFim;
 	}
 
-	public void setDatafim(String datafim) {
-		this.datafim = datafim;
+	public void setDatafim(Data datafim) {
+		this.dataFim = datafim;
 	}
 
 	public double getValorcontrato() {
-		return valorcontrato;
+		return valorContrato;
 	}
 
-	public void setValorcontrato(Double valorcontrato) {
-		this.valorcontrato = valorcontrato;
+	public void setValorContrato(Double valorcontrato) {
+		if (this.valorContrato != null) {
+		this.valorContrato = valorcontrato;
+		}
 	}
 
-	public int getFranquiaPaginas() {
-		return franquiapaginas;
+	public Double getFranquiaPaginas() {
+		return franquiaPaginas;
 	}
 
 	@Override
-	public void setFranquiaPaginas(Integer franquiapaginas) {
-		this.franquiapaginas = franquiapaginas;
+	public void setFranquiaPaginas(Double franquiapaginas) {
+		this.franquiaPaginas = franquiapaginas;
 	}
 
 	@Override
@@ -91,13 +91,4 @@ public class Contrato implements Negociavel {
 		PessoaJuridica cliente = new PessoaJuridica();
 		cliente.adicionaCliente(nome, cnpj);
 	}
-
-	public Integer getNumTotalImpressoras() {
-		return numTotalImpressoras;
-	}
-
-	public void setNumTotalImpressoras(Integer numTotalImpressoras) {
-		Contrato.numTotalImpressoras = numTotalImpressoras;
-	}
-
 }

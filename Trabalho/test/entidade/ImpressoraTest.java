@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ImpressoraTest {
 
-	Impressora impressora1;
+	private Impressora impressora1;
 
 	@Before
 	public void setUp() throws Exception {
