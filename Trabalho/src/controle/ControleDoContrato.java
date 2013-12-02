@@ -9,25 +9,29 @@ import entidade.Impressora;
 public class ControleDoContrato {
 
 	private Contrato contrato;
-	private Impressora impressora;
 	private Double totalPagar;
-	private Integer valPorExcedente;
+	private Double valPorExcedente;
 
-	public void getTotalPagar() {
-		if (impressora.getContadorPaginas() >= contrato.getFranquiaPaginas()) {
-			totalPagar = (contrato.getValorcontrato()
-					+ impressora.getContadorPaginas()
+	public void TotalPagar() {
+		
+		if (contrato.getContadorPagImpressoras() >= contrato.getFranquiaPaginas()) {
+			this.totalPagar = (contrato.getValorcontrato()
+					+ contrato.getContadorPagImpressoras()
 					- contrato.getFranquiaPaginas()) * valPorExcedente;
 		} else {
-			totalPagar = contrato.getValorcontrato();
+			this.totalPagar = contrato.getValorcontrato();
 		}
 	}
-
-	public Integer getValPorExcedente() {
+	
+	public Double getTotalPagar() {
 		return valPorExcedente;
 	}
 
-	public void setValPorExcedente(Integer valPorExcedente) {
+	public Double getValPorExcedente() {
+		return valPorExcedente;
+	}
+
+	public void setValPorExcedente(Double valPorExcedente) {
 		this.valPorExcedente = valPorExcedente;
 	}
 

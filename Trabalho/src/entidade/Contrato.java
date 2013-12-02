@@ -35,6 +35,10 @@ public class Contrato implements Negociavel {
 	public Impressora getImpressoras() {
 		return impressoras;
 	}
+	
+	public int getContadorPagImpressoras() {
+		return impressoras.getContadorPaginas();
+	}
 
 	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
