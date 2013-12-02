@@ -12,7 +12,7 @@ import org.junit.Test;
 
 public class PessoaJuridicaTest {
 
-	PessoaJuridica cliente1;
+	private PessoaJuridica cliente1;
 
 	@Before
 	public void setUp() throws Exception {

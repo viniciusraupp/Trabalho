@@ -1,15 +1,17 @@
 package entidade;
 
+import java.util.Date;
+
 import javax.xml.crypto.Data;
 
 public class Contrato implements Negociavel {
 	private String numContrato;
 	private PessoaJuridica cliente;
 	private Impressora impressoras;
-	private Data dataInicio;
-	private Data dataFim;
+	private Date dataInicio;
+	private Date dataFim;
 	private Double valorContrato;
-	private Double franquiaPaginas;
+	private Integer franquiaPaginas;
 
 	public Contrato(String numcontrato) {
 		if (numcontrato.length() > 0 && numcontrato.length() <= 10) {
@@ -20,10 +22,6 @@ public class Contrato implements Negociavel {
 
 	public String getNumcontrato() {
 		return numContrato;
-	}
-
-	public void setNumcontrato(String numcontrato) {
-		this.numContrato = numcontrato;
 	}
 
 	public PessoaJuridica getCliente() {
@@ -51,19 +49,19 @@ public class Contrato implements Negociavel {
 		}
 	}
 
-	public Data getDatainicio() {
+	public Date getDatainicio() {
 		return dataInicio;
 	}
 
-	public void setDatainicio(Data datainicio) {
+	public void setDatainicio(Date datainicio) {
 		this.dataInicio = datainicio;
 	}
 
-	public Data getDatafim() {
+	public Date getDatafim() {
 		return dataFim;
 	}
 
-	public void setDatafim(Data datafim) {
+	public void setDatafim(Date datafim) {
 		this.dataFim = datafim;
 	}
 
@@ -77,12 +75,12 @@ public class Contrato implements Negociavel {
 		}
 	}
 
-	public Double getFranquiaPaginas() {
+	public Integer getFranquiaPaginas() {
 		return franquiaPaginas;
 	}
 
 	@Override
-	public void setFranquiaPaginas(Double franquiapaginas) {
+	public void setFranquiaPaginas(Integer franquiapaginas) {
 		this.franquiaPaginas = franquiapaginas;
 	}
 

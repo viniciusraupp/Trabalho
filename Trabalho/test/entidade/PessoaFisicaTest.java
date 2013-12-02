@@ -13,7 +13,7 @@ import org.junit.Test;
  */
 public class PessoaFisicaTest {
 
-	PessoaFisica cliente1;
+	private PessoaFisica cliente1;
 	
 	@Before
 	public void setUp() throws Exception {

@@ -5,6 +5,8 @@ package entidade;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,6 +24,12 @@ public class ContratoTest {
 		assertEquals("Numero do contrato tem que ser 021587","021587" , contrato.getNumcontrato());
 		contrato = new Contrato("");
 		assertEquals("Numero do contrato tem que ser nulo",null , contrato.getNumcontrato());
+	}
+	
+	@Test
+	public void testSetDataInicio() {
+		contrato = new Contrato("021587");
+		
 	}
 
 	@Test

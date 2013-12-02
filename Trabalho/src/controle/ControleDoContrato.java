@@ -1,25 +1,34 @@
 package controle;
 
 import entidade.Contrato;
+import entidade.Impressora;
 
+/**
+ * @author Andre e Vinicius 20/11/2013
+ */
 public class ControleDoContrato {
-	
+
 	private Contrato contrato;
+	private Impressora impressora;
+	private Double totalPagar;
+	private Integer valPorExcedente;
 
-	public void adicionaContrato(String numContrato, String nome, String cnpj,
-			String numSerie, String marca, String modelo) {
-		contrato = new Contrato(numContrato);
-		contrato.adicionaCliente(nome, cnpj);
-		contrato.adicionaImpressoras(numSerie, marca, modelo);
+	public void getTotalPagar() {
+		if (impressora.getContadorPaginas() >= contrato.getFranquiaPaginas()) {
+			totalPagar = (contrato.getValorcontrato()
+					+ impressora.getContadorPaginas()
+					- contrato.getFranquiaPaginas()) * valPorExcedente;
+		} else {
+			totalPagar = contrato.getValorcontrato();
+		}
 	}
 
-	public void setFranquiaPaginas(Integer franquiaPaginas) {
-		contrato.setFranquiaPaginas(franquiaPaginas);
+	public Integer getValPorExcedente() {
+		return valPorExcedente;
 	}
-	
-	public void incluiImpressora(String numSerie, String marca, String modelo){
-		contrato.adicionaImpressoras(numSerie, marca, modelo);
-		
+
+	public void setValPorExcedente(Integer valPorExcedente) {
+		this.valPorExcedente = valPorExcedente;
 	}
 
 }

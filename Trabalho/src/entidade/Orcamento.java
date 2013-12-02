@@ -16,7 +16,7 @@ public class Orcamento implements Negociavel {
 	private Impressora impressoras;
 	private String dataValidadeOrc;
 	private Double valorOrc;
-	private Double franquiaPaginasOrc;
+	private Integer franquiaPaginasOrc;
 
 	public String getNumOrcamento() {
 		return numOrcamento;
@@ -50,12 +50,12 @@ public class Orcamento implements Negociavel {
 		this.valorOrc = valorOrc;
 	}
 
-	public Double getFranquiaPaginasOrc() {
+	public Integer getFranquiaPaginasOrc() {
 		return franquiaPaginasOrc;
 	}
 
 	@Override
-	public void setFranquiaPaginas(Double franquiaPaginasOrc) {
+	public void setFranquiaPaginas(Integer franquiaPaginasOrc) {
 		this.franquiaPaginasOrc = franquiaPaginasOrc;
 	}
 
