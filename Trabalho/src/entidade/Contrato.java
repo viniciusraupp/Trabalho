@@ -65,11 +65,8 @@ public class Contrato implements Negociavel {
 		return dataFim;
 	}
 
-	public void setDatafim(String dia,String mes, String ano) {
-		Date data  = new Date;
-		data.
-		
-		//this.dataFim = datafim;
+	public void setDatafim(Date datafim) {
+		this.dataFim = datafim;
 	}
 
 	public double getValorcontrato() {
