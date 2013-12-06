@@ -3,8 +3,6 @@
  */
 package entidade;
 
-import java.util.List;
-
 /**
  * Classe Orcamento
  * 

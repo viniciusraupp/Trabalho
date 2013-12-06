@@ -2,8 +2,6 @@ package entidade;
 
 import java.util.Date;
 
-import javax.xml.crypto.Data;
-
 public class Contrato implements Negociavel {
 	private String numContrato;
 	private PessoaJuridica cliente;

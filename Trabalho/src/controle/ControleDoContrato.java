@@ -1,7 +1,6 @@
 package controle;
 
 import entidade.Contrato;
-import entidade.Impressora;
 
 /**
  * @author Andre e Vinicius 20/11/2013

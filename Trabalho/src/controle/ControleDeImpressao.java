@@ -3,7 +3,6 @@
  */
 package controle;
 
-import entidade.Contrato;
 import entidade.Impressora;
 
 /**
