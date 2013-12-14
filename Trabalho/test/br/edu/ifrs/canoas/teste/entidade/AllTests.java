@@ -5,6 +5,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
+ * Suite de testes do pacote entidade
+ * 
  * @author Andre e Vinicius
  * 30/11/2013
  */
