@@ -1,12 +1,14 @@
 package br.edu.ifrs.canoas.entidade;
 
-/**
- * Classe abstrata Cliente
- * @author Andre
- * @author Vinícius
- */
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Classe abstrata Cliente
+ * 
+ * @author Andre e Vinicius
+ * 14/12/2013
+ */
 
 public abstract class Cliente {
 
@@ -14,11 +16,6 @@ public abstract class Cliente {
 	private String endereco;
 	private List<Telefone> telefones = new ArrayList<Telefone>();
 
-	/**
-	 * @param nome
-	 * @param cpf
-	 *            ou cnpj
-	 */
 	public abstract boolean adicionaCliente(String nome, String idCliente);
 
 	public String getNome() {
