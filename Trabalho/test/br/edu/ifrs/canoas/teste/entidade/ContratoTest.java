@@ -1,15 +1,15 @@
-/**
- * 
- */
 package br.edu.ifrs.canoas.teste.entidade;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import br.edu.ifrs.canoas.entidade.Contrato;
 
 /**
+ * Classe de Teste do Contrato
+ * 
  * @author Andre e Vinicius
  * 01/12/2013
  */
@@ -25,23 +25,23 @@ public class ContratoTest {
 		assertEquals("Numero do contrato tem que ser nulo",null , contrato.getNumcontrato());
 	}
 	
-	@Test
+	@Ignore //@Test
 	public void testSetDataInicio() {
 		contrato = new Contrato("021587");
 		
 	}
 
-	@Test
+	@Ignore //@Test
 	public void testSetValorcontrato() {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	@Ignore //@Test
 	public void testSetFranquiaPaginas() {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	@Ignore //@Test
 	public void testAdicionaCliente() {
 		fail("Not yet implemented");
 	}
