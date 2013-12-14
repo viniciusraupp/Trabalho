@@ -1,9 +1,10 @@
 package br.edu.ifrs.canoas.entidade;
 
 /**
- * Classe Pessoa Fisica Heranca da Classe Cliente
+ * Classe Pessoa Fisica - Heranca da Classe Cliente
  * 
- * @author Andre e Vinícius 24/11/2013
+ * @author Andre e Vinícius 
+ * 24/11/2013
  */
 
 public class PessoaFisica extends Cliente {
@@ -29,5 +30,8 @@ public class PessoaFisica extends Cliente {
 		return (cpf.substring(0, 3) + "." + cpf.substring(3, 6) + "."
 				+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
 	}
+	
+	// com toString -> return (cpf.toString().substring(0, 3) + "." + cpf.substring(3, 6) + "."
+	//		+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
 
 }
