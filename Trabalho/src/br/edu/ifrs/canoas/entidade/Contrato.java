@@ -2,6 +2,11 @@ package br.edu.ifrs.canoas.entidade;
 
 import java.util.Date;
 
+/**
+ * Classe Contrato
+ * @author Andre e Vinicius
+ * 14/12/2013
+ */
 public class Contrato implements Negociavel {
 	private String numContrato;
 	private PessoaJuridica cliente;
