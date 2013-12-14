@@ -8,6 +8,11 @@ import org.junit.Test;
 import br.edu.ifrs.canoas.controle.ControleDoContrato;
 import br.edu.ifrs.canoas.entidade.Contrato;
 
+/**
+ * Classe de teste do Controle de Contrato
+ * @author Andre e Vinicius
+ * 14/12/2013
+ */
 public class ControleDoContratoTest {
 	private ControleDoContrato controle;
 	private Contrato contrato;
