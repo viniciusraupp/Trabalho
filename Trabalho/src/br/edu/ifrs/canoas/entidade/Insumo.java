@@ -3,8 +3,8 @@ package br.edu.ifrs.canoas.entidade;
 /**
  * Classe Insumo
  * 
- * @author Andre
- * @author Vinícius
+ * @author Andre e Vinicius
+ * 14/12/2013
  */
 public class Insumo implements VidaUtil {
 	private String tipo;
