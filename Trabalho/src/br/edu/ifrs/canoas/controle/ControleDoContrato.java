@@ -3,7 +3,11 @@ package br.edu.ifrs.canoas.controle;
 import br.edu.ifrs.canoas.entidade.Contrato;
 
 /**
- * @author Andre e Vinicius 20/11/2013
+ * Classe Controle do Contrato
+ * 
+ * @author Andre e Vinicius
+ * 
+ * 20/11/2013
  */
 public class ControleDoContrato {
 
