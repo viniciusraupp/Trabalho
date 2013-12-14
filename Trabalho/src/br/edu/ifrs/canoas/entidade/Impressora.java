@@ -3,8 +3,8 @@ package br.edu.ifrs.canoas.entidade;
 /**
  * Classe Impressora
  * 
- * @author Andre
- * @author Vinícius
+ * @author Andre e Vinicius
+ * 14/12/2013
  */
 public class Impressora implements VidaUtil {
 	private String numserie;
