@@ -1,10 +1,11 @@
 package br.edu.ifrs.canoas.entidade;
 
-/*
- *  Classe Pessoa Juridica
- *  	herança da Classe Cliente
+/**
+ * Classe Pessoa Juridica - herança de Cliente
+ * 
+ * @author Andre e Vinicius
+ * 14/12/2013
  */
-
 public class PessoaJuridica extends Cliente {
 
 	private String cnpj;
