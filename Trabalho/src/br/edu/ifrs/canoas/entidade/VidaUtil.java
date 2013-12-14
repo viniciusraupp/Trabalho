@@ -3,7 +3,9 @@ package br.edu.ifrs.canoas.entidade;
 /**
  * Interface Vida Util
  * 
- * @author Andre e Vinícius 24/11/2013
+ * @author Andre e Vinícius 
+ * 
+ * 24/11/2013
  */
 public interface VidaUtil {
 
