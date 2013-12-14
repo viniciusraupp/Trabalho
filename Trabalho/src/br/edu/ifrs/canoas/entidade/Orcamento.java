@@ -1,12 +1,11 @@
-/**
- * 
- */
 package br.edu.ifrs.canoas.entidade;
 
 /**
  * Classe Orcamento
  * 
- * @author Andre e Vin�cius 24/11/2013
+ * @author Andre e Vinicius
+ * 
+ *  4/11/2013
  */
 public class Orcamento implements Negociavel {
 	private String numOrcamento;
