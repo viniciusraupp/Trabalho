@@ -6,7 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.edu.ifrs.canoas.entidade.Impressora;
-
+/**
+ * Classe de teste da Impressora
+ * 
+ * @author Andre e Vinicius
+ * 14/12/2013
+ */
 public class ImpressoraTest {
 
 	private Impressora impressora1;
