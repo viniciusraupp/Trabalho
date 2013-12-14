@@ -9,6 +9,7 @@ import br.edu.ifrs.canoas.entidade.PessoaJuridica;
 
 /**
  * Classe de teste Pessoa Juridica
+ * 
  * @author Andre e Vinicius
  * 30/11/2013
  */
