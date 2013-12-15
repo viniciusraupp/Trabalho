@@ -12,17 +12,23 @@ public class PessoaJuridica extends Cliente {
 
 	//@Override
 	//public boolean adicionaCliente(String nome, String cnpj) {
-	public PessoaJuridica(String nome,String cnpj){
-		if (nome!=null && nome!="" && cnpj.length() == 14) {
+	//public PessoaJuridica(String nome,String cnpj){
+	public PessoaJuridica(){
+		/*if (nome!=null && nome!="" && cnpj.length() == 14) {
 			super.nome = nome;
 			this.cnpj = cnpj;
 			//return true;
-		}
+		}*/
 		//return false;		
 	}
 
 	public String getCNPJ() {
 		return cnpj;
+	}
+	
+	public void setCnpj(String cnpj) {
+		if (cnpj!=null && cnpj.length()==14)
+			this.cnpj = cnpj;
 	}
 
 	// @return o cnpj no formato 22.333.333/4444-22
