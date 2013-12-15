@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import br.edu.ifrs.canoas.entidade.Cliente;
 import br.edu.ifrs.canoas.entidade.PessoaFisica;
 import br.edu.ifrs.canoas.entidade.PessoaJuridica;
+import br.edu.ifrs.canoas.entidade.Telefone;
 
 /**
  * Classe para controle do cliente
@@ -14,59 +15,35 @@ import br.edu.ifrs.canoas.entidade.PessoaJuridica;
  * 15/12/2013
  * @param <telefone>
  */
-public class ControleDoCliente<telefone> {
+public class ControleDoCliente {
 
-	public Cliente novoCliente(String nome,String codCliente,String endereco,
-			ArrayList<telefone>telefones,String cpf,String cnpj){
+	public Cliente novoCliente(String nome,String codCliente,
+			String endereco, ArrayList<Telefone>telefones,
+			String cpf,String cnpj){
+		
 		Cliente cliente;
 		
 		if(cpf!=null && cnpj==null){
-			cliente = new PessoaFisica(nome, cpf);
-			
+			cliente = new PessoaFisica();
+			((PessoaFisica)cliente).setCpf(cpf);
 		}	
 		else if(cpf==null && cnpj != null){
-			cliente = new PessoaJuridica(nome, cnpj);
-			
+			cliente = new PessoaJuridica();
+			((PessoaJuridica)cliente).setCnpj(cnpj);
 		}
-		return null;
+		else
+			return null;
 		
+		if (nome!=null && nome.isEmpty() &&
+				codCliente!=null && codCliente.isEmpty() &&
+				endereco!=null && endereco.isEmpty()){
+			cliente.setNome(nome);
+			cliente.setCodCliente(codCliente);
+			cliente.setEndereco(endereco);
+			
+			return cliente;
+		}
+		else		
+			return null;
 	}
-	
-	
-	
-	
-/*public ControleUsuario(){}
-	
-	public Usuario novoUsuario(String nome, String cpf, String dataNascimento, String telefone,String curso, String cargo){
-		Usuario user;
-		
-		if(cargo!=null && curso == null){
-			user = new Funcionario();
-			((Funcionario) user).setCargo(cargo);
-		}else if(cargo == null && curso != null){
-			user = new Aluno();
-			((Aluno) user).setCurso(curso);
-		}else{
-			
-			return null;
-		}
-		
-		if(nome != null && !nome.isEmpty() 	&& 
-				cpf!=null && !cpf.isEmpty() && 
-				telefone!=null && !telefone.isEmpty() &&
-				dataNascimento != null && !dataNascimento.isEmpty()){
-			
-			user.setCpf(cpf);
-			user.setNome(nome);
-			user.setTelefone(telefone);
-			user.setDataNascimento(dataNascimento);
-			
-			return user;
-				
-		}else{
-			return null;
-		}
-		
-	}*/
-	
 }
