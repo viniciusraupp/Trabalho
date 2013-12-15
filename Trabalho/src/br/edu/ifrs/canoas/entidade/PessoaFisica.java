@@ -3,22 +3,24 @@ package br.edu.ifrs.canoas.entidade;
 /**
  * Classe Pessoa Fisica - Heranca da Classe Cliente
  * 
- * @author Andre e Vinícius 
+ * @author Andre e Vinícius  
  * 24/11/2013
  */
 
 public class PessoaFisica extends Cliente {
 
 	private String cpf;
+	//private Integer cpf;
 	
-	@Override
-	public boolean adicionaCliente(String nome, String cpf) {
-		if (nome.length() > 1 && cpf.length() == 11) {
+	//@Override
+	//public boolean adicionaCliente(String nome, String cpf) {
+	public PessoaFisica(String nome, String cpf){
+		if (nome!=null && nome!="" && cpf.length() == 11) {
 			super.nome = nome;
 			this.cpf = cpf;
-			return true;
+			//return true;
 		}
-		return false;		
+		//return false;		
 	}
 
 	public String getCPF() {
@@ -33,5 +35,17 @@ public class PessoaFisica extends Cliente {
 	
 	// com toString -> return (cpf.toString().substring(0, 3) + "." + cpf.substring(3, 6) + "."
 	//		+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
+	
+	@Override
+	public String getCodigoFormatado(){
+		//if(adicionaCliente(nome,cpf))  
+			if(contClientes<10)
+				return ("CLI"+"000"+Integer.toString(contClientes));
+			if(contClientes<100)
+				return ("CLI"+"00"+Integer.toString(contClientes));
+			if(contClientes<1000)
+				return ("CLI"+"0"+Integer.toString(contClientes));
+		return ("CLI"+Integer.toString(contClientes));
+	}
 
 }
