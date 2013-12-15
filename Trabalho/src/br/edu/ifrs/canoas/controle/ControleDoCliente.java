@@ -3,6 +3,8 @@ package br.edu.ifrs.canoas.controle;
 import java.util.ArrayList;
 
 import br.edu.ifrs.canoas.entidade.Cliente;
+import br.edu.ifrs.canoas.entidade.PessoaFisica;
+import br.edu.ifrs.canoas.entidade.PessoaJuridica;
 
 /**
  * Classe para controle do cliente
@@ -16,7 +18,16 @@ public class ControleDoCliente<telefone> {
 
 	public Cliente novoCliente(String nome,String codCliente,String endereco,
 			ArrayList<telefone>telefones,String cpf,String cnpj){
+		Cliente cliente;
 		
+		if(cpf!=null && cnpj==null){
+			cliente = new PessoaFisica(nome, cpf);
+			
+		}	
+		else if(cpf==null && cnpj != null){
+			cliente = new PessoaJuridica(nome, cnpj);
+			
+		}
 		return null;
 		
 	}
