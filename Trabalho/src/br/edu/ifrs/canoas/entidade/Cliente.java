@@ -21,6 +21,8 @@ public abstract class Cliente {
 	//public abstract boolean adicionaCliente(String nome, String idCliente);
 
 	
+	
+
 	public String getCodCliente() {
 		return codCliente;
 	}
@@ -42,6 +44,11 @@ public abstract class Cliente {
 	public String getNome() {
 		return nome;
 	}
+	
+	public void setNome(String nome) {
+		if (nome!=null && nome!="")
+			this.nome = nome;
+	}
 
 	public String getEndereco() {
 		return endereco;
@@ -54,6 +61,12 @@ public abstract class Cliente {
 	public List<Telefone> getTelefone() {
 		return telefones;
 	}
+	
+	/*public Telefone adicionaTelefone(Telefone telefone){
+		
+		return null;
+		
+	}*/
 
 	public abstract String getCodigoFormatado();
 
