@@ -12,18 +12,9 @@ public class PessoaFisica extends Cliente {
 	private String cpf;
 	//private Integer cpf;
 	
-	//@Override
-	//public boolean adicionaCliente(String nome, String cpf) {
-	//public PessoaFisica(String nome, String cpf){
 	public PessoaFisica(){
-		/*if (nome!=null && nome!="" && cpf.length() == 11) {
-			super.nome = nome;
-			this.cpf = cpf;*/
-			//return true;
-		//}
-		//return false;		
 	}
-
+	
 	public String getCPF() {
 		return cpf;
 	}
@@ -31,6 +22,17 @@ public class PessoaFisica extends Cliente {
 	public void setCpf(String cpf) {
 		if (cpf!=null && cpf.length()==11)
 			this.cpf = cpf;
+		else
+			this.cpf=null;
+	}
+	
+	public boolean IncluiPessoaFisica(String nome, String cpf){
+		if (nome!=null && nome!="" && cpf.length() == 11) {
+			super.nome = nome;
+			this.cpf = cpf;
+			return true;
+		}
+		return false;		
 	}
 
 	// @return the cpf no formato 333.333.333-22
@@ -44,14 +46,13 @@ public class PessoaFisica extends Cliente {
 	
 	@Override
 	public String getCodigoFormatado(){
-		//if(adicionaCliente(nome,cpf))  
-			if(contClientes<10)
-				return ("CLI"+"000"+Integer.toString(contClientes));
-			if(contClientes<100)
-				return ("CLI"+"00"+Integer.toString(contClientes));
-			if(contClientes<1000)
-				return ("CLI"+"0"+Integer.toString(contClientes));
-		return ("CLI"+Integer.toString(contClientes));
+		if(contClientes<10)
+			return ("CLI"+"000"+Integer.toString(contClientes));
+		if(contClientes<100)
+			return ("CLI"+"00"+Integer.toString(contClientes));
+		if(contClientes<1000)
+			return ("CLI"+"0"+Integer.toString(contClientes));
+	return ("CLI"+Integer.toString(contClientes));
 	}
 
 }
