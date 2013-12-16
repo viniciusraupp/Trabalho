@@ -9,17 +9,9 @@ package br.edu.ifrs.canoas.entidade;
 public class PessoaJuridica extends Cliente {
 
 	private String cnpj;
+	//private Integer cnpj;
 
-	//@Override
-	//public boolean adicionaCliente(String nome, String cnpj) {
-	//public PessoaJuridica(String nome,String cnpj){
 	public PessoaJuridica(){
-		/*if (nome!=null && nome!="" && cnpj.length() == 14) {
-			super.nome = nome;
-			this.cnpj = cnpj;
-			//return true;
-		}*/
-		//return false;		
 	}
 
 	public String getCNPJ() {
