@@ -11,7 +11,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * 30/11/2013
  */
 @RunWith(Suite.class)
-@SuiteClasses({ ControleDeImpressaoTest.class, ControleDoContratoTest.class })
+@SuiteClasses({ ControleDeImpressaoTest.class, ControleDoContratoTest.class, ControleDoClienteTest.class })
 public class AllTests {
 
 }
