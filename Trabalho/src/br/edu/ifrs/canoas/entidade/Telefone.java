@@ -11,11 +11,11 @@ public class Telefone {
 	private Integer numero;
 	private String tipo;
 
-	public int getNumero() {
+	public Integer getNumero() {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public void setNumero(Integer numero) {
 		this.numero = numero;
 	}
 
