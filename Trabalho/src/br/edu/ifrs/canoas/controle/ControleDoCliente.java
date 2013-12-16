@@ -16,13 +16,30 @@ import br.edu.ifrs.canoas.entidade.Telefone;
  * @param <telefone>
  */
 public class ControleDoCliente {
-
-	public Cliente novoCliente(String nome,String codCliente,
+	
+	private Cliente cliente;
+	/*public Cliente novoCliente(String nome,String codCliente,
 			String endereco, ArrayList<Telefone>telefones,
-			String cpf,String cnpj){
+			String cpf,String cnpj){	com telefone*/ 
+
+	public Cliente novoCli(String cpf,String cnpj){
 		
-		Cliente cliente;
-		
+		if(cpf!=null && cnpj==null){
+			cliente = new PessoaFisica();
+			((PessoaFisica)cliente).setCpf(cpf);
+			return cliente;
+		}	
+		else if(cpf==null && cnpj != null){
+			cliente = new PessoaJuridica();
+			((PessoaJuridica)cliente).setCnpj(cnpj);
+			return cliente;
+		}
+		return null;
+	}
+	
+	public Cliente novoCliente(String nome,String codCliente,
+	String endereco, String cpf,String cnpj){
+
 		if(cpf!=null && cnpj==null){
 			cliente = new PessoaFisica();
 			((PessoaFisica)cliente).setCpf(cpf);
@@ -33,14 +50,14 @@ public class ControleDoCliente {
 		}
 		else
 			return null;
-		
+
 		if (nome!=null && nome.isEmpty() &&
 				codCliente!=null && codCliente.isEmpty() &&
 				endereco!=null && endereco.isEmpty()){
 			cliente.setNome(nome);
 			cliente.setCodCliente(codCliente);
 			cliente.setEndereco(endereco);
-			
+
 			return cliente;
 		}
 		else		
