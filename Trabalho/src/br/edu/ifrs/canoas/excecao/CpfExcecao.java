@@ -1,6 +1,8 @@
 package br.edu.ifrs.canoas.excecao;
 
 /**
+ * Classe de excecao
+ * 
  * @author Andre e Vinicius
  * 16/12/2013
  */
