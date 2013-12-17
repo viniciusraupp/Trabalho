@@ -50,7 +50,27 @@ public class PessoaFisicaTest {
 	
 	@Test
 	public void testGetCodigoFormatado() {
-		fail("Not yet implemented");
+		
+		cliente1.IncluiPessoaFisica("Andre", "12345678901");
+		assertEquals("Código deve ser CLI0001","CLI0001",cliente1.getCodigoFormatado());
+		
+		cliente1.IncluiPessoaFisica("Luis", "98765432110");
+		assertEquals("Código deve ser CLI0002","CLI0002",cliente1.getCodigoFormatado());
+		
+		for (int i=0;i<8;i++)
+			cliente1.IncluiPessoaFisica("Andre", "12345678901");
+		assertEquals("Código deve ser CLI0010","CLI0010",cliente1.getCodigoFormatado());
+		
+		for (int i=0;i<90;i++)
+			cliente1.IncluiPessoaFisica("Andre", "12345678901");
+		assertEquals("Código deve ser CLI0100","CLI0100",cliente1.getCodigoFormatado());
+		
+		for (int i=0;i<900;i++)
+			cliente1.IncluiPessoaFisica("Andre", "12345678901");
+		assertEquals("Código deve ser CLI1000","CLI1000",cliente1.getCodigoFormatado());
+		
+		cliente1.IncluiPessoaFisica("Andre", "12345678901");
+		assertEquals("Código deve ser CLI1001","CLI1001",cliente1.getCodigoFormatado());
 	}
 
 }
