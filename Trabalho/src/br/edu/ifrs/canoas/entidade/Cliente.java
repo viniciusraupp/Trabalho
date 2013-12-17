@@ -18,11 +18,6 @@ public abstract class Cliente {
 	private List<Telefone> telefones = new ArrayList<Telefone>();
 	protected Integer contClientes = 0;	//para numerar sequencialmente os clientes
 
-	//public abstract boolean adicionaCliente(String nome, String idCliente);
-
-	
-	
-
 	public String getCodCliente() {
 		return codCliente;
 	}
@@ -31,15 +26,6 @@ public abstract class Cliente {
 		if (codCliente.length()==7)
 			this.codCliente = codCliente;
 	}
-
-	public Integer getContClientes() {
-		return contClientes+1;
-	}
-
-	public void setContClientes(Integer contClientes) {
-		this.contClientes = contClientes;
-	}
-	
 	
 	public String getNome() {
 		return nome;
@@ -62,11 +48,19 @@ public abstract class Cliente {
 		return telefones;
 	}
 	
-	/*public Telefone adicionaTelefone(Telefone telefone){
-		
-		return null;
-		
-	}*/
+	public Integer getContClientes() {
+		return contClientes;
+	}
+
+	public void setContClientes(Integer contClientes) {
+		this.contClientes = contClientes+1;
+	}
+	
+	public boolean adicionaTelefone(Telefone telefone){
+		if (telefone != null)
+			telefones.add(telefone);
+		return false;
+	}
 
 	public abstract String getCodigoFormatado();
 
