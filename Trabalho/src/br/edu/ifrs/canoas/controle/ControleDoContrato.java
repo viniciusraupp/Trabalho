@@ -18,11 +18,11 @@ public class ControleDoContrato {
 	public void TotalPagar() {
 		
 		if (contrato.getContadorPagImpressoras() >= contrato.getFranquiaPaginas()) {
-			this.totalPagar = (contrato.getValorcontrato()
+			this.setTotalPagar((contrato.getValorcontrato()
 					+ contrato.getContadorPagImpressoras()
-					- contrato.getFranquiaPaginas()) * valPorExcedente;
+					- contrato.getFranquiaPaginas()) * valPorExcedente);
 		} else {
-			this.totalPagar = contrato.getValorcontrato();
+			this.setTotalPagar(contrato.getValorcontrato());
 		}
 	}
 	
@@ -36,6 +36,10 @@ public class ControleDoContrato {
 
 	public void setValPorExcedente(Double valPorExcedente) {
 		this.valPorExcedente = valPorExcedente;
+	}
+
+	public void setTotalPagar(Double totalPagar) {
+		this.totalPagar = totalPagar;
 	}
 
 }

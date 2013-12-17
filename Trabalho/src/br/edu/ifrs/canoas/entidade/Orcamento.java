@@ -57,12 +57,6 @@ public class Orcamento implements Negociavel {
 	}
 
 	@Override
-	public void adicionaCliente(String nome, String cnpj) {
-		PessoaJuridica cliente = new PessoaJuridica();
-		cliente.adicionaCliente(nome, cnpj);
-	}
-
-	@Override
 	public void adicionaImpressoras(String numSerie, String marca, String modelo) {
 		if (numOrcamento.length() > 0 && numOrcamento.length() <= 10) {
 			impressoras = new Impressora(numSerie);
@@ -73,6 +67,11 @@ public class Orcamento implements Negociavel {
 		if (numOrcamento.length() > 0 && numOrcamento.length() <= 10) {
 			impressoras.setModelo(modelo);
 		}
+	}
+
+	@Override
+	public void adicionaCliente(String nome, String cnpj) {
+		
 	}
 
 }

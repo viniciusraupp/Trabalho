@@ -1,11 +1,8 @@
 package br.edu.ifrs.canoas.controle;
 
-import java.util.ArrayList;
-
 import br.edu.ifrs.canoas.entidade.Cliente;
 import br.edu.ifrs.canoas.entidade.PessoaFisica;
 import br.edu.ifrs.canoas.entidade.PessoaJuridica;
-import br.edu.ifrs.canoas.entidade.Telefone;
 
 /**
  * Classe para controle do cliente
@@ -18,9 +15,6 @@ import br.edu.ifrs.canoas.entidade.Telefone;
 public class ControleDoCliente {
 	
 	private Cliente cliente;
-	/*public Cliente novoCliente(String nome,String codCliente,
-			String endereco, ArrayList<Telefone>telefones,
-			String cpf,String cnpj){	com telefone*/ 
 
 	public Cliente novoCli(String cpf,String cnpj){
 		

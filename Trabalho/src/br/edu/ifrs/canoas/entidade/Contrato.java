@@ -93,7 +93,8 @@ public class Contrato implements Negociavel {
 
 	@Override
 	public void adicionaCliente(String nome, String cnpj) {
-		PessoaJuridica cliente = new PessoaJuridica();
-		cliente.adicionaCliente(nome, cnpj);
+		
 	}
+
+
 }
