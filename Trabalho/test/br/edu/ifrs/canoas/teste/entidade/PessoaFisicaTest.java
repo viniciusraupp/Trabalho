@@ -38,6 +38,16 @@ public class PessoaFisicaTest {
 		//assertEquals("CPF é 12345678901","12345678901",cliente1.getCPF());
 		assertNull("CPF deve ter só 11 digitos",cliente1.getCPF());
 	}
+	
+	/*@Test //(expected = CpfExcecao.class)
+	public void testCpfComParametroNulo() {
+		try {
+			cliente1.setCpf(null);	
+		} catch (CpfExcecao e) {
+			assertEquals("Nao pode depositar  null", e.getMessage());
+			e.printStackTrace();
+		}
+	}*/
 
 	@Test
 	public void getCPFFormatadoTest() {

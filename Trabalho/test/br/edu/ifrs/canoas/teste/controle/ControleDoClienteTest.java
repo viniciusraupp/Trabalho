@@ -27,10 +27,6 @@ public class ControleDoClienteTest {
 
 	@Test
 	public void testNovoCliente() {
-		/*assertNull("Não pode ter cpf e cnpj",controle.novoCliente("Andre", "CLI0001", "Rua A", 1234, "12345678901", "12345678901234"));
-		assertNull("Precisa nome",controle.novoCliente(null, "CLI0001", "Rua A", 1234, "12345678901", null));
-		assertNull("Precisa codigo do cliente",controle.novoCliente("Andre", null, "Rua A", 1234, "12345678901", null));
-		assertNull("Precisa endereço",controle.novoCliente("Andre", "CLI0001", null, 1234, "12345678901", null));		com telefone*/		
 		
 		assertNull("Não pode ter cpf e cnpj juntos",controle.novoCliente("Andre", "CLI0001", "Rua A","12345678901", "12345678901234"));
 		assertNull("Precisa nome",controle.novoCliente(null, "CLI0001", "Rua A", "12345678901", null));
