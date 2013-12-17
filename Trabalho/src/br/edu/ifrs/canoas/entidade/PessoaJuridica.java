@@ -21,7 +21,20 @@ public class PessoaJuridica extends Cliente {
 	public void setCnpj(String cnpj) {
 		if (cnpj!=null && cnpj.length()==14)
 			this.cnpj = cnpj;
+		else
+			this.cnpj=null;
 	}
+	
+	public boolean IncluiPessoaJuridica(String nome, String cnpj){
+		if (nome!=null && nome!="" && cnpj.length() == 14) {
+			super.nome = nome;
+			this.cnpj = cnpj;
+			super.contClientes+=1;
+			return true;
+		}
+		return false;		
+	}
+	
 
 	// @return o cnpj no formato 22.333.333/4444-22
 	public String getCNPJFormatado() {
@@ -32,7 +45,6 @@ public class PessoaJuridica extends Cliente {
 
 	@Override
 	public String getCodigoFormatado() {
-		//if(adicionaCliente(nome,cpf))  
 		if(contClientes<10)
 			return ("CLI"+"000"+Integer.toString(contClientes));
 		if(contClientes<100)
