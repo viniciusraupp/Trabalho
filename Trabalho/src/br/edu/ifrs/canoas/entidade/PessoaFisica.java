@@ -30,6 +30,7 @@ public class PessoaFisica extends Cliente {
 		if (nome!=null && nome!="" && cpf.length() == 11) {
 			super.nome = nome;
 			this.cpf = cpf;
+			super.contClientes+=1;
 			return true;
 		}
 		return false;		
@@ -41,8 +42,9 @@ public class PessoaFisica extends Cliente {
 				+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
 	}
 	
-	// com toString -> return (cpf.toString().substring(0, 3) + "." + cpf.substring(3, 6) + "."
-	//		+ cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
+	// com toString
+	//return (cpf.toString().substring(0, 3) + "." + cpf.toString().substring(3, 6) + "."
+	//		+ cpf.toString().substring(6, 9) + "-" + cpf.toString().substring(9, 11));
 	
 	@Override
 	public String getCodigoFormatado(){
